@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.code{
+				background: #000000;
+				color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<h4>node的作用</h4>
+		<ul>
+			<li>1、写webAPI</li>
+			<li>2、用作中间层</li>
+			<li>3、前端工程化的一些工具（webpack、gulp）</li>
+		</ul>
+		<h4>node的优势</h4>
+		<ul>
+			<li>1、性能高</li>
+			<li>2、便于前端学习</li>
+		</ul>
+		
+		<h4>npm包管理</h4>
+		<ul>
+			<li>1、运行<span class="code">npm init</span>，生成package.json文件，即包管理文件</li>
+			<li>2、通过<span class="code">npm install 包名  (简写 npm i 包名)</span>  安装依赖</li>
+			<li>3、通过<span class="code">npm uninstall 包名  (简写 npm un 包名)</span>   移除依赖</li>
+			<li>4、通过<span class="code">npm update 包名 </span>   更新依赖</li>
+			<li>5、通过<span class="code">npm install (简写 npm i)</span>   安装package.json中的所有依赖</li>
+		</ul>
+		<p><b>cls  node清屏命令</b></p>
+		<hr />
+		<h1>node的模块</h1>
+		<h4>1、全局模块 </h4>
+		<ul>
+			<li>定义：何时何地才能访问，不需要引用</li>
+			<li>process.env   环境变量</li>
+			<li>process.arg   传入的参数</li>
+			<li>__dirname</li>
+		</ul>
+		<hr />
+		<h4>2、系统模块</h4>
+		<ul>
+			<li>定义: 需要require(),但不需要单独下载</li>
+			<li>path: 用于处理文件路径和目录路径的实用工具 </li>
+			<li>fs: 文件读写操作 </li>
+		</ul>
+		<hr />
+		<h4>3、自定义模块</h4>
+		<ul>
+			<li>定义：require自己封装的模块</li>
+			<li>exports</li>
+			<li>module</li>
+			<li>require  如果有路径就去路径里找，没有路径的话就去node_modules里面找</li>
+		</ul>
+		<hr />
+		<h4>HTTP模块</h4>
+		<ul>
+			<li>服务器对象：http.createServer()   快速搭建服务器</li>
+		</ul>
+		<hr />
+		<h4>GET请求</h4>
+		<p>
+			浏览器与服务器之间的传递的数据，称之为报文。<br />
+			报文分为<br />
+			<b>头</b>：各种信息，大小<=32k(这是http规定的) <br />
+			<b>体</b>：数据，大小<2G
+		</p>
+		<ul>
+			<li>数据是放在url里面进行传输的,传输的容量比较小，<32k </li>
+		</ul>
+		<hr />
+		<h4>POST请求</h4>
+		<ul>
+			<li>数据是放在报文体里面进行传输的,传输的容量比较大，<2G </li>
+		</ul>
+		
+		<hr />
+		<h4>node框架</h4>
+		<ul>
+			<li>express</li>
+			<li>koa2  (推荐！)</li>
+		</ul>
+		
+		
+		
+	</body>
+</html>
